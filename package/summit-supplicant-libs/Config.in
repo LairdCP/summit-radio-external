@@ -1,0 +1,15 @@
+config BR2_PACKAGE_SUMMIT_SUPPLICANT_LIBS
+	bool "Summit Supplicant libs"
+	depends on BR2_PACKAGE_SUMMIT_SUPPLICANT
+	depends on !BR2_PACKAGE_SUMMIT_SUPPLICANT_LIBS_BUILD
+
+if BR2_PACKAGE_SUMMIT_SUPPLICANT_LIBS
+
+config BR2_PACKAGE_SUMMIT_SUPPLICANT_LIBS_LEGACY
+	bool "Summit Supplicant libs Legacy"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  Installs required sdcsdk and sdccli
+
+endif

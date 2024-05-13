@@ -1,0 +1,21 @@
+config BR2_PACKAGE_SUMMIT_MFG60N
+	bool "60 series manufacturing tools binaries"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  This package installs 60 series manufacturing tools.
+
+if BR2_PACKAGE_SUMMIT_MFG60N
+config BR2_PACKAGE_SUMMIT_MFG60N_LMU
+	bool "60 series manufacturing tool (lmu)"
+	default y
+	help
+	  This package installs 60 series lmu for use in setting the regulatory domain.
+
+config BR2_PACKAGE_SUMMIT_MFG60N_REGULATORY
+	bool "60 series regulatory tools (lru, btlru)"
+	default y
+	help
+	  This package installs 60 series lru and btlru for use in regulatory testing.
+
+endif

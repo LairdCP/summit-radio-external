@@ -1,0 +1,36 @@
+config BR2_PACKAGE_SUMMIT_HOSTAPD
+	bool "Summit hostapd"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_OPENSSL
+	help
+	  Summit hostapd
+
+if BR2_PACKAGE_SUMMIT_HOSTAPD
+
+choice
+	prompt "Package Source"
+	default BR2_PACKAGE_SUMMIT_HOSTAPD_60
+
+config BR2_PACKAGE_SUMMIT_HOSTAPD_60
+	bool "Using 60 series"
+
+config BR2_PACKAGE_SUMMIT_HOSTAPD_MSD
+	bool "Using MSD series"
+
+config BR2_PACKAGE_SUMMIT_HOSTAPD_LWB
+	bool "Using LWB/IF series"
+
+config BR2_PACKAGE_SUMMIT_HOSTAPD_NX
+	bool "Using NX series"
+
+config BR2_PACKAGE_SUMMIT_HOSTAPD_TI
+	bool "Using TI series"
+
+endchoice
+
+config BR2_PACKAGE_SUMMIT_HOSTAPD_CLI
+	bool "Install hostapd_cli binary"
+	help
+	  Install hostapd_cli command line utility
+
+endif

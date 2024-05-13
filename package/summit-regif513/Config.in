@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SUMMIT_REGIF513
+	bool "IF573 manufacturing tools binaries"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  This package installs IF573 series manufacturing tools.

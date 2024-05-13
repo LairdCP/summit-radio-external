@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SUMMIT_REG50N
+	bool "50 series regulatory tools"
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  This package installs 50 series regulatory tools.

@@ -1,0 +1,2 @@
+config BR2_PACKAGE_SUMMIT_FIRMWARE_BDSDMAC
+	bool "BD-SDMAC Radio Firmware"

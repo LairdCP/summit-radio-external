@@ -1,0 +1,219 @@
+
+choice
+	prompt "Radio Bundles"
+	optional
+
+	config BR2_SUMMIT_SOM60_RADIO
+		bool "SOM60 Radio Bundle"
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_BT if BR2_PACKAGE_BLUEZ5_UTILS
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_60
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_60_SDIO_UART
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_60
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_60
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_60
+		help
+		  This option selects the radio bundle for the 60 Series SOMs
+
+	config BR2_SUMMIT_SOM8MP_RADIO
+		bool "Summit SOM8MP Radio Bundle"
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_BT if BR2_PACKAGE_BLUEZ5_UTILS
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_60
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_60_SOM8MP
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_60
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_60
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_60
+		help
+		  This option selects the radio bundle for the Summit SOM 8M Plus
+
+	config BR2_SUMMIT_WB50N_SYSD_RADIO
+		bool "WB50N SYSD Radio Bundle"
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_MSD
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_MSD_50
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_MSD
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_MSD
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_MSD
+		help
+		  This option selects the radio bundle for the WB50N Modern
+
+	config BR2_SUMMIT_WB50N_LEGACY_RADIO
+		bool "WB50N Legacy Radio Bundle"
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_MSD
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_MSD_50
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_MSD
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_LEGACY
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_MSD
+		help
+		  This option selects the radio bundle for the WB50N Legacy
+
+	config BR2_SUMMIT_WB45N_LEGACY_RADIO
+		bool "WB45N Legacy Radio Bundle"
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_MSD
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_MSD_45
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_MSD
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_LEGACY
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_MSD
+		help
+		  This option selects the radio bundle for the WB45N Legacy
+
+	config BR2_SUMMIT_BD_COMMON_IMAGE_RADIO
+		bool "BD SOM Common Image Radio Bundle"
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_LWB_IF
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_LWB_IF_LWB5PLUS_SDIO_DIV
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_LWB_IF_IF573_SDIO
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_BDSDMAC
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		imply BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_BDSDMAC
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_LWB
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_LWB
+		help
+		  This option selects the default radio bundle for the BD Common Image
+
+	config BR2_SUMMIT_CORE_60_RADIO
+		bool "Core 60 Radio Bundle"
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_BT if BR2_PACKAGE_BLUEZ5_UTILS
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_60
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_60
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_60
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_60
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD_60
+		help
+		  This option selects the default radio bundle for the Core 60 Radio
+		  User needs to manually select proper firmware variant for the radio
+		  This option is suitable for customers purchased the standalone
+		  60 radio
+
+	config BR2_SUMMIT_CORE_LWB_RADIO
+		bool "Core LWB/IF Radio Bundle"
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_BT if BR2_PACKAGE_BLUEZ5_UTILS
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_LWB_IF
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_LWB
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_LWB
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_LWB
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD_LWB
+		help
+		  This option selects the default radio bundle for the Core LWB/IF Radios
+		  User needs to manually select proper firmware variant for the radio
+		  This option is suitable for customers purchased the standalone
+		  LWB or IF radio
+
+	config BR2_SUMMIT_CORE_NX_RADIO
+		bool "Core NX Radio Bundle"
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_BT if BR2_PACKAGE_BLUEZ5_UTILS
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_NX
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_NX61X
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_NX
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_NX
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_NX
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD_NX
+		help
+		  This option selects the default radio bundle for the Core LWB/IF Radios
+		  User needs to manually select proper firmware variant for the radio
+		  This option is suitable for customers purchased the standalone
+		  NX radio
+
+	config BR2_SUMMIT_CORE_TI_RADIO
+		bool "Core TI Radio Bundle"
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_BT if BR2_PACKAGE_BLUEZ5_UTILS
+		imply BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_TI
+		select BR2_PACKAGE_SUMMIT_FIRMWARE_TI_351
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS
+		select BR2_PACKAGE_SUMMIT_LINUX_BACKPORTS_TI
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER
+		imply BR2_PACKAGE_SUMMIT_NETWORK_MANAGER_TI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_WPA_CLI
+		imply BR2_PACKAGE_SUMMIT_SUPPLICANT_TI
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD
+		imply BR2_PACKAGE_SUMMIT_HOSTAPD_TI
+		help
+		  This option selects the default radio bundle for the Core LWB/IF Radios
+		  User needs to manually select proper firmware variant for the radio
+		  This option is suitable for customers purchased the standalone
+		  TI radio
+endchoice
+
+config BR2_SUMMIT_60_RADIO
+	bool
+	default y if BR2_SUMMIT_SOM60_RADIO || BR2_SUMMIT_SOM8MP_RADIO || BR2_SUMMIT_CORE_60_RADIO
+
+config BR2_SUMMIT_50_RADIO
+	bool
+	default y if BR2_SUMMIT_WB50N_SYSD_RADIO || BR2_SUMMIT_WB50N_LEGACY_RADIO
+
+config BR2_SUMMIT_FIPS_RADIO
+	bool "FIPS Radio"
+	depends on BR2_SUMMIT_SOM60_RADIO || BR2_SUMMIT_50_RADIO || BR2_SUMMIT_WB45N_LEGACY_RADIO
+	select BR2_PACKAGE_SUMMIT_SUPPLICANT_FIPS
+
+config BR2_PACKAGE_SUMMIT_RADIO_STACK_ARCH
+	string
+	default "arm-eabihf" if BR2_arm && BR2_ARM_EABIHF
+	default "arm-eabi" if BR2_arm && BR2_ARM_EABI
+	default "aarch64" if BR2_aarch64
+	default "powerpc64-e5500" if BR2_powerpc64
+	default "powerpc" if BR2_powerpc
+	default "x86" if BR2_i386
+	default "x86_64" if BR2_x86_64
+
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-adaptive_bt/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-adaptive_ww/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-brcm-patchram-plus/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-firmware-60/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-firmware-bdsdmac/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-firmware-lwb-if/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-firmware-msd/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-firmware-nx/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-firmware-ti/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-hostapd/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-linux-backports/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-mfg60/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-network-manager/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-reg45n/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-reg50n/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-regcypress/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-regif513/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-regif573/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-reglwb5plus/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-reglwbplus/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-supplicant/Config.in"
+source "$BR2_EXTERNAL_SUMMIT_RADIO_PATH/package/summit-supplicant-libs/Config.in"

@@ -1,0 +1,59 @@
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+	bool "Summit Adaptive World Mode Binaries Installer"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_LIBCONFIG
+	select BR2_PACKAGE_ADAPTIVE_WW if BR2_LRD_DEVEL_BUILD
+	select BR2_PACKAGE_ADAPTIVE_WW_CFG_WW if BR2_LRD_DEVEL_BUILD
+
+	help
+	  Extracts adaptive_ww from adaptive_ww-arm release and installs them on the target.
+
+if BR2_PACKAGE_SUMMIT_ADAPTIVE_WW
+
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_CFG_FILE
+	string "Additional Configuration File"
+	help
+		Path and filename for runtinme configuration settings
+
+choice
+	prompt "AWM's interface preference"
+	default BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_INTF_STA
+
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_INTF_STA
+	bool "STA"
+	help
+		Use managed interfaces when available.
+
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_INTF_AP
+	bool "AP"
+	help
+		Use AP interfaces when available.
+
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_INTF_NONE
+	bool "NONE"
+	help
+		Use the first available interface.
+
+endchoice
+
+choice
+	prompt "AWM's operating mode"
+	default BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_MODE_FULL
+
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_MODE_FULL
+	bool "Full"
+	help
+		AWM mode which requires periodic geo-location validation.
+config BR2_PACKAGE_SUMMIT_ADAPTIVE_WW_MODE_LITE
+	bool "Lite"
+	help
+		AWM mode which does not periodically validate geo-location.
+
+endchoice
+
+config BR2_PACKAGE_ADAPTIVE_WW_CFG_WW
+	bool "Configure World Wide Utility"
+	help
+		Extracts cww from adaptive_ww-arm release and installs it on the target.
+
+endif

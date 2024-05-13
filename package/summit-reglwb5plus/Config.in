@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SUMMIT_REGLWB5PLUS
+	bool "LWB5+ manufacturing tools binaries"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  This package installs LWB5+ manufacturing tools.

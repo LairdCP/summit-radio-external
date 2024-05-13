@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SUMMIT_REG45N
+	bool "45 series regulatory tools"
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  This package installs 45 series regulatory tools.

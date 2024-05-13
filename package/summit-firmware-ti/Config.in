@@ -1,0 +1,9 @@
+config BR2_PACKAGE_SUMMIT_FIRMWARE_TI
+	bool "TI Radio Firmware"
+
+if BR2_PACKAGE_SUMMIT_FIRMWARE_TI
+
+config BR2_PACKAGE_SUMMIT_FIRMWARE_TI_351
+	bool "TI351"
+
+endif

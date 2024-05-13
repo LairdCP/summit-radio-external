@@ -1,0 +1,29 @@
+ifneq ($(BR2_LRD_DEVEL_BUILD),y)
+
+SUMMIT_FIRMWARE_MSD_VERSION = $(call qstrip,$(SUMMIT_MSD_RADIO_STACK_VERSION_VALUE))
+SUMMIT_FIRMWARE_MSD_SOURCE =
+SUMMIT_FIRMWARE_MSD_LICENSE = Ezurio
+SUMMIT_FIRMWARE_MSD_LICENSE_FILES = COPYING
+
+ifeq ($(MSD_60_SOURCE_LOCATION),laird_internal)
+  SUMMIT_FIRMWARE_MSD_SITE = $(SUMMIT_RADIO_URI_BASE_INTERNAL)/firmware/$(SUMMIT_FIRMWARE_MSD_VERSION)
+else
+  SUMMIT_FIRMWARE_MSD_SITE = https://github.com/LairdCP/SonaNX-Release-Packages/releases/tag/LRD-REL-$(SUMMIT_FIRMWARE_MSD_VERSION)
+endif
+
+
+ifeq ($(BR2_PACKAGE_SUMMIT_FIRMWARE_MSD_45),y)
+SUMMIT_FIRMWARE_EXTRA_DOWNLOADS += laird-ath6k-6003-firmware-$(SUMMIT_FIRMWARE_VERSION).tar.bz2
+endif
+
+ifeq ($(BR2_PACKAGE_SUMMIT_FIRMWARE_MSD_50),y)
+SUMMIT_FIRMWARE_EXTRA_DOWNLOADS += laird-ath6k-6004-firmware-$(SUMMIT_FIRMWARE_VERSION).tar.bz2
+endif
+
+define SUMMIT_FIRMWARE_MSD_INSTALL_TARGET_CMDS
+	$(foreach n,$(SUMMIT_FIRMWARE_MSD_EXTRA_DOWNLOADS),tar -xjf $($(PKG)_DL_DIR)/$(n) -C $(TARGET_DIR) --keep-directory-symlink --no-overwrite-dir --touch $(sep))
+endef
+
+endif
+
+$(eval $(generic-package))

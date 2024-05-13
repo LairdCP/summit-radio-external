@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SUMMIT_REGLWBPLUS
+	bool "LWB+ manufacturing tools binaries"
+	select BR2_PACKAGE_LIBNL
+	select BR2_PACKAGE_LIBEDIT
+	help
+	  This package installs LWB+ series manufacturing tools.
