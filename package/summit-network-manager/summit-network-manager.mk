@@ -23,7 +23,7 @@ $(error "No target radio selected")
 endif
 
 ifeq ($(MSD_BINARIES_SOURCE_LOCATION),laird_internal)
-  SUMMIT_NETWORK_MANAGER_SITE = $(SUMMIT_RADIO_URI_BASE_INTERNAL)/linux/lrd-network-manager/src/$(SUMMIT_NETWORK_MANAGER_VERSION)
+  SUMMIT_NETWORK_MANAGER_SITE = $(SUMMIT_RADIO_URI_BASE_INTERNAL)/lrd-network-manager/src/$(SUMMIT_NETWORK_MANAGER_VERSION)
 endif
 
 SUMMIT_NETWORK_MANAGER_SOURCE = summit-network-manager-src-$(SUMMIT_NETWORK_MANAGER_VERSION).tar.xz
