@@ -1,3 +1,5 @@
+ifneq ($(BR2_LRD_DEVEL_BUILD),y)
+
 SUMMIT_REGCYPRESS_VERSION = $(SUMMIT_60_RADIO_STACK_VERSION_VALUE)
 SUMMIT_REGCYPRESS_SOURCE = regCypress-$(SUMMIT_RADIO_STACK_ARCH)-$(SUMMIT_REGCYPRESS_VERSION).tar.bz2
 SUMMIT_REGCYPRESS_STRIP_COMPONENTS = 0
@@ -21,5 +23,7 @@ define SUMMIT_REGCYPRESS_INSTALL_TARGET_CMDS
 	$(INSTALL) -D -m 775 -t $(TARGET_DIR)/usr/bin $(@D)/wl
 	$(INSTALL) -D -m 644 -t $(TARGET_DIR)/lib/firmware/brcfmac $(@D)/brcmfmac*
 endef
+
+endif
 
 $(eval $(generic-package))

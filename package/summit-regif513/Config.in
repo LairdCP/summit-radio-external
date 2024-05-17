@@ -1,6 +1,9 @@
 config BR2_PACKAGE_SUMMIT_REGIF513
-	bool "IF573 manufacturing tools binaries"
+	bool "IF513 manufacturing tools binaries"
 	select BR2_PACKAGE_LIBNL
 	select BR2_PACKAGE_LIBEDIT
+	select BR2_PACKAGE_LRU_CYPRESS if BR2_LRD_DEVEL_BUILD
+	select BR2_PACKAGE_SUMMIT_FIRMWARE_DEVEL if BR2_LRD_DEVEL_BUILD
+	select BR2_PACKAGE_SUMMIT_FIRMWARE_DEVEL_CYW55513_MFG if BR2_LRD_DEVEL_BUILD
 	help
-	  This package installs IF573 series manufacturing tools.
+	  This package installs IF513 series manufacturing tools.

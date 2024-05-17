@@ -2,5 +2,8 @@ config BR2_PACKAGE_SUMMIT_REGIF573
 	bool "IF573 manufacturing tools binaries"
 	select BR2_PACKAGE_LIBNL
 	select BR2_PACKAGE_LIBEDIT
+	select BR2_PACKAGE_LRU_CYPRESS if BR2_LRD_DEVEL_BUILD
+	select BR2_PACKAGE_SUMMIT_FIRMWARE_DEVEL if BR2_LRD_DEVEL_BUILD
+	select BR2_PACKAGE_SUMMIT_FIRMWARE_DEVEL_CYW5557X_MFG if BR2_LRD_DEVEL_BUILD
 	help
 	  This package installs IF573 series manufacturing tools.

@@ -1,3 +1,5 @@
+ifneq ($(BR2_LRD_DEVEL_BUILD),y)
+
 SUMMIT_REG45N_VERSION = $(SUMMIT_MSD_RADIO_STACK_VERSION_VALUE)
 SUMMIT_REG45N_SOURCE = reg45n-$(SUMMIT_RADIO_STACK_ARCH)-$(SUMMIT_REG45N_VERSION).tar.bz2
 SUMMIT_REG45N_STRIP_COMPONENTS = 0
@@ -21,5 +23,7 @@ define SUMMIT_REG45N_INSTALL_TARGET_CMDS
 	$(INSTALL) -D -m 755 -t $(TARGET_DIR)/usr/bin $(@D)/lru $(@D)/smu_cli $(@D)/tcmd.sh
 	$(INSTALL) -D -m 644 -t $(TARGET_DIR)/lib/firmware/ath6k/AR6003/hw2.1.1/ $(@D)/files/utf*.bin
 endef
+
+endif
 
 $(eval $(generic-package))
