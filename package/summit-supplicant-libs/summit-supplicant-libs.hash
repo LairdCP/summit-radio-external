@@ -1,0 +1,8 @@
+sha256 2ab34083db727cc0afbad08f786f55e7d2d24fd4888387059b520117fbca9baf  summit_supplicant_libs-x86-12.0.0.12.tar.bz2
+sha256 7b415cde6362450b3ce340944c0f96fc18db1e45afc73c614993184f83e24d89  summit_supplicant_libs-x86_64-12.0.0.12.tar.bz2
+sha256 4d10120484e3c2d6a8a27de7e780b2356f7434c3f2c3eda7d13affb987065072  summit_supplicant_libs-arm-eabi-12.0.0.12.tar.bz2
+sha256 0b5059766e9441f853c8c1705a99e9fbc24732b0273179884ce33dc0fba1b937  summit_supplicant_libs-arm-eabihf-12.0.0.12.tar.bz2
+sha256 101feeef1007f4e687a1087afc1f5cd08cb17fe456371a3ad13f40c8d715ae4c  summit_supplicant_libs-aarch64-12.0.0.12.tar.bz2
+sha256 1738a6bd91c78e1d7fd5f15ae05bd92d791c39818a80807d9afa89c06697e794  summit_supplicant_libs-powerpc64-e5500-12.0.0.12.tar.bz2
+sha256 24df146e00e6807b2c25d3497f308d8f2c136b2a88425813a8b7023439330950  summit_supplicant_libs_legacy-arm-eabi-12.0.0.12.tar.bz2
+sha256 52df00a52e86adebd4fdce9385ecde0c49707878363d1662e1fe4aa50871d57b  summit_supplicant_libs_legacy-arm-eabihf-12.0.0.12.tar.bz2

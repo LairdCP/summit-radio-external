@@ -1,0 +1,17 @@
+sha256 0d7e14f58e1343f6f80e930466c924ade5c6cb08735b7c3e34743f056d1903c2  summit-lwb-etsi-firmware-12.0.0.12.tar.bz2
+sha256 32dd438c5c02ab8249ab611bc0bd933aa8b041c4b41d059345e4a50b9d1a20b8  summit-lwb-fcc-firmware-12.0.0.12.tar.bz2
+sha256 8b9fb504dd0edb564699b89fd741f34d7c7417853132508c0157adec6eaab37e  summit-lwb-jp-firmware-12.0.0.12.tar.bz2
+sha256 366f839bc90b2d715ce602cf23f2a15a5dd86ed4f2b042628d39389689356f4e  summit-lwb5-etsi-firmware-12.0.0.12.tar.bz2
+sha256 2344611000bab7a43b7f443c01c9600aa08c36edd847ff4201d12b9186f33b4e  summit-lwb5-fcc-firmware-12.0.0.12.tar.bz2
+sha256 b3bfa6b284cb61d79b7c25033b469ac90d02abd983ff27086d606aa28d9a280e  summit-lwb5-ic-firmware-12.0.0.12.tar.bz2
+sha256 1ed3b2ef4aa1cceab584f602335f309b0de6b627aecdc5640c501afb3fd8bc0b  summit-lwb5-jp-firmware-12.0.0.12.tar.bz2
+sha256 b3b0632ae4583f543126bf643608616e703a80aaa8e890e18ff51456939645d0  summit-lwb5plus-sdio-div-firmware-12.0.0.12.tar.bz2
+sha256 69028712b81d9a2030b308a881087f0ca46cbebbdf9d5868ee94187444f2309c  summit-lwb5plus-sdio-sa-firmware-12.0.0.12.tar.bz2
+sha256 fe440da0ad20b722b1ed773d44971880d2d09a3791fb747da422f21620f9d7dd  summit-lwb5plus-sdio-sa-m2-firmware-12.0.0.12.tar.bz2
+sha256 6f8db2cd73d0c9af9002ff1ac3874a243f456daf4245800624234fd02069673c  summit-lwb5plus-usb-div-firmware-12.0.0.12.tar.bz2
+sha256 769d57456f20fc1042d5424b34051bb0758afb8b0b558852432057dd0dfd9358  summit-lwb5plus-usb-sa-firmware-12.0.0.12.tar.bz2
+sha256 92d86380d64a8ac42d3f82c0c7d0a6ec5135a72e01abe18cb97675ca5ef0b3ca  summit-lwb5plus-usb-sa-m2-firmware-12.0.0.12.tar.bz2
+sha256 203bdf12fc62708256945f302f5ceccc63b2f530045569ba7dc62175d8127545  summit-lwbplus-firmware-12.0.0.12.tar.bz2
+sha256 b4b622f9e2df01174240fd269d7ad343e43723a1207164db64586a4c0e9e724b  summit-if573-sdio-firmware-12.0.0.12.tar.bz2
+sha256 c6e35e903da134e364f87e8c93ea7d862c1c0c03c845086df9c9a041c2fa2709  summit-if573-pcie-firmware-12.0.0.12.tar.bz2
+sha256 bc4a2735587e32db9646a587b0244ff6dc3413091a449c1d34e4e6e3992eeac4  summit-if513-sdio-firmware-12.0.0.12.tar.bz2
