@@ -1,6 +1,6 @@
-sha256 6b2332706caa56e90480ae688b45363ccaf106758d83a4aff78b9f91e2800c00  adaptive_ww-x86-12.0.0.29.tar.bz2
-sha256 1cadcd44e69094dedf6d72ac620bdfc1f96797da16b11f8887603d53ce72ea03  adaptive_ww-x86_64-12.0.0.29.tar.bz2
-sha256 c0a9775b5b5db8e7c268b7b6766dff980e5275e552d45a0c22eaf831e33ab602  adaptive_ww-arm-eabi-12.0.0.29.tar.bz2
-sha256 2ae76bdc7d5b327b69dd60cae9c312ed153aef1a5eca2080ae5bc34e219c8e27  adaptive_ww-arm-eabihf-12.0.0.29.tar.bz2
-sha256 a9cab419b7456e83d10f4e26dd08cc8a185d9e13d05d3b384a4394f832c89825  adaptive_ww-aarch64-12.0.0.29.tar.bz2
-sha256 6f3dcf90fa1b52f494043b4a7fe904b95d747a987ffb4dbc9db6fb6f23045dc2  adaptive_ww-powerpc64-e5500-12.0.0.29.tar.bz2
+sha256 ba560287315df15b4c2aa9b884c34cae57c13af388415f58fdefe9a3541eeb80  adaptive_ww-x86-12.0.0.31.tar.bz2
+sha256 afd35fe02d5bfe845670f2bd606d7185934bcb141bfc679c31137d54ed6aab83  adaptive_ww-x86_64-12.0.0.31.tar.bz2
+sha256 e4147fcceaaf0f360c2a20bc07a3c6209e5eb177555493809c800ed3da91b4fd  adaptive_ww-arm-eabi-12.0.0.31.tar.bz2
+sha256 c5d7fd5f941b5642feb47bfb29dedcc57be61d8eec1547dd5015e6c00d5c6da9  adaptive_ww-arm-eabihf-12.0.0.31.tar.bz2
+sha256 da9e3d71bf9bbb3e04430444b6ff911afd8a93528f928729cfe0ae7d432d8fb1  adaptive_ww-aarch64-12.0.0.31.tar.bz2
+sha256 0bfd2fd2d84331abcc164416dd16c8d40685eead5217cbbf44a43b23c95f086f  adaptive_ww-powerpc64-e5500-12.0.0.31.tar.bz2

@@ -1,1 +1,3 @@
-sha256 f92cfd843131128e0d4501e9fe504cc65109e86a2bf9087df005cf1b19555252  summit-bdsdmac-firmware-12.0.0.29.tar.bz2
+sha256 82a19c27dd3e7d0182c89bf1813b70864c96b61d288232a8abfe21cf52c393d8  summit-bdsdmac-firmware-12.0.0.31.tar.bz2
+sha256 4ea56b251222f9d121c22f92e5d860750ab1b29a1d743be83b0f3af311d4972c  LICENSE.qca_firmware
+sha256 b5f0ccacca8aead9cd18ca89ca2ca0d29fc65c8d55b8ac1dc7f7602322b944fb  notice.txt
