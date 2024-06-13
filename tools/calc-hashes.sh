@@ -9,7 +9,7 @@ err_report() {
 trap 'err_report ${LINENO} "${BASH_COMMAND}"' EXIT
 
 get_version() {
-	sed -rn "s,.*$1.*=\s*([0-9.]+),\1,p" versions.mk
+	sed -rn "s,.*${1}.*=\s*([0-9.]+),\1,p" versions.mk
 }
 
 calc_file () {
@@ -26,6 +26,10 @@ unique() {
 hash_file() {
 	echo "package/${1}/${1}.hash"
 }
+
+if [ -n "${1}" ]; then
+	sed -i -r "s/(.+=).*/\1 ${1}" versions.mk
+fi
 
 prefix="https://files.devops.rfpros.com/builds/linux"
 
