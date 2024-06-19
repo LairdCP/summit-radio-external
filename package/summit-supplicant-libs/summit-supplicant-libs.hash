@@ -1,8 +1,8 @@
-sha256 290c045d34b82133c8c034695911fec94fc2f7a59e80d5f3b2ec1e14d42ef8aa  summit_supplicant_libs-x86-12.29.0.4.tar.bz2
-sha256 27468160f597d6cd828527b243734757135b005eeccb9a15d98bd9b6334c0855  summit_supplicant_libs-x86_64-12.29.0.4.tar.bz2
-sha256 f77c0e8b2c43bb03ad9df34c42e251a613ea02a568c4771ec6db7ec57043b3da  summit_supplicant_libs-arm-eabi-12.29.0.4.tar.bz2
-sha256 104271fc50f26823a29c80d46de1e90c4691784cb43a0a3dcfcb37a6603f121b  summit_supplicant_libs-arm-eabihf-12.29.0.4.tar.bz2
-sha256 b8ec0cc8e21b1f1aa68a0c78608b3ac4bde9a8fed55c6c75818f7c2f95e2ab0d  summit_supplicant_libs-aarch64-12.29.0.4.tar.bz2
-sha256 a855dc20edd9912571067671344360e71c2b8dd516e9f53f9cc7bdb27257469b  summit_supplicant_libs-powerpc64-e5500-12.29.0.4.tar.bz2
-sha256 6872f03e7658566ed04300a268fc9f9749e8dd2fabc41bc4a0c28f2daef2b0e2  summit_supplicant_libs_legacy-arm-eabi-12.29.0.4.tar.bz2
-sha256 65ab7485a89d893a2bbf5cce400e80907471863e2fb68fb2e1114b490621b7b1  summit_supplicant_libs_legacy-arm-eabihf-12.29.0.4.tar.bz2
+sha256  b5fe34740f5e58ecb1ff2aa742825ed84512fa587c7b084a7868337b2dd46a0e  summit_supplicant_libs-x86-12.29.0.8.tar.bz2
+sha256  d3858b2c75191d6d2d532dc60e4beb89d8f3932075d0c4b1e11fd206e6892638  summit_supplicant_libs-x86_64-12.29.0.8.tar.bz2
+sha256  3644302ad859055da207a8486cedab6d15b977c278a7ec5a47dd84064b12857f  summit_supplicant_libs-arm-eabi-12.29.0.8.tar.bz2
+sha256  05bdba7d56318ed309c14edbfd77c27bbcf32c90a87ddf3b398e1007067bafc8  summit_supplicant_libs-arm-eabihf-12.29.0.8.tar.bz2
+sha256  c8d1c604e01dd8cfa4b6ae03c70bead167212ad50d0f66c5f2bc2d3f7f8cea4f  summit_supplicant_libs-aarch64-12.29.0.8.tar.bz2
+sha256  01b29fc044c8bc811fbc1847d240759d87afcece60d3e8e2224d5235c0c10bf5  summit_supplicant_libs-powerpc64-e5500-12.29.0.8.tar.bz2
+sha256  164f57dd9aa2519ce6351b8c93fde81351d4c92117b2363824e5cb20df8c79f5  summit_supplicant_libs_legacy-arm-eabi-12.29.0.8.tar.bz2
+sha256  9c8bc12381bd6a0132012d78b98eabdfd85be409fab1049b85c22d30f8b6215f  summit_supplicant_libs_legacy-arm-eabihf-12.29.0.8.tar.bz2
