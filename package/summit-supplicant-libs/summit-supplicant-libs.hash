@@ -6,3 +6,4 @@ sha256  c8d1c604e01dd8cfa4b6ae03c70bead167212ad50d0f66c5f2bc2d3f7f8cea4f  summit
 sha256  01b29fc044c8bc811fbc1847d240759d87afcece60d3e8e2224d5235c0c10bf5  summit_supplicant_libs-powerpc64-e5500-12.29.0.8.tar.bz2
 sha256  164f57dd9aa2519ce6351b8c93fde81351d4c92117b2363824e5cb20df8c79f5  summit_supplicant_libs_legacy-arm-eabi-12.29.0.8.tar.bz2
 sha256  9c8bc12381bd6a0132012d78b98eabdfd85be409fab1049b85c22d30f8b6215f  summit_supplicant_libs_legacy-arm-eabihf-12.29.0.8.tar.bz2
+sha256  ff126d9b0f7f474b2652064d045c6b25a015eb94f9d0ac29c96d053c94577343  LICENSE.ezurio
