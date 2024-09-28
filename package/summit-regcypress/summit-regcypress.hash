@@ -1,5 +1,5 @@
-sha256  74f4fce5c889bb18ddab20a8abeb08e0fb503313b3da5c70ada47c947b8bb4c7  regCypress-arm-eabi-12.0.0.96.tar.bz2
-sha256  82f414961c7df8057fb3560ccdc5b77cba36ff9c97e4087631b879710a64396a  regCypress-arm-eabihf-12.0.0.96.tar.bz2
-sha256  6c85d4f9c0a2b78c4007e80f46db9e9767869c542d57a8b0fee56976d5b4d9bd  regCypress-aarch64-12.0.0.96.tar.bz2
+sha256  325b9b33f221824d6b17fee36ebb9f24af5360809a8a82086c3eb6efa5bd5691  regCypress-arm-eabi-12.0.0.97.tar.bz2
+sha256  087b8ec096d4e372f1e7fcbff33c2cd32889ec2613a675fdfeaa8e966a94c18d  regCypress-arm-eabihf-12.0.0.97.tar.bz2
+sha256  a13f9a81ae505422207131573e476438be4d145b18ac6f026d57d63ccfbaeb19  regCypress-aarch64-12.0.0.97.tar.bz2
 sha256  34c3cec7451f3a1f5d42f282358ed564bdbb3bc582073873428c3d31cc643782  FOSS_README.txt
 sha256  ff126d9b0f7f474b2652064d045c6b25a015eb94f9d0ac29c96d053c94577343  LICENSE.ezurio
