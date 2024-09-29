@@ -91,7 +91,7 @@ version_all=$(unique "${version_60}" "${version_bdsdmac}" "${version_lwb}" "${ve
 		calc_file "summit_supplicant/laird/${v}/summit_supplicant-src-${v}.tar.gz"
 	done
 
-	echo "sha256  af01e1d1ee065a1054d20ebe8a78a016f1fb1133b73e6a9d50801b165bb280c7  README"
+	echo "sha256  f1b5992bbdd015c3ccb7faaadd62ef58ed821e15b9329bf2ceb27511ccc3f562  README"
 	echo "${LICENSE_SUMMIT}"
 } > "$(hash_file summit-supplicant)"
 
