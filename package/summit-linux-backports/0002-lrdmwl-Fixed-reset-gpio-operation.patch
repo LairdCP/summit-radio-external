@@ -12,15 +12,15 @@ diff --git a/drivers/net/wireless/summit/lrdmwl/gpio.c b/drivers/net/wireless/su
 index c13db258..53f3d100 100644
 --- a/drivers/net/wireless/summit/lrdmwl/gpio.c
 +++ b/drivers/net/wireless/summit/lrdmwl/gpio.c
-@@ -104,7 +104,7 @@
- +
- +int mwl_gpio_set(mwl_gpio_t *card_gpio, int value)
- +{
--+	if (mwl_gpio_valid(card_gpio))
-++	if (!mwl_gpio_valid(card_gpio))
- +		return -ENODEV;
- +
- +	gpio_set_value(card_gpio->gpio,
+@@ -179,7 +179,7 @@
+ 
+ int mwl_gpio_set(mwl_gpio_t *card_gpio, int value)
+ {
+-	if (mwl_gpio_valid(card_gpio))
++	if (!mwl_gpio_valid(card_gpio))
+ 		return -ENODEV;
+ 
+ 	gpio_set_value(card_gpio->gpio,
 -- 
 2.46.2
 
