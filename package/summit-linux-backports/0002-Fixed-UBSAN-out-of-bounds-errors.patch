@@ -1,0 +1,66 @@
+From 2bd4e9d726c49ec993420bfb405ef03f703512f1 Mon Sep 17 00:00:00 2001
+From: Boris Krasnovskiy <boris.krasnovskiy@ezurio.com>
+Date: Tue, 7 Jan 2025 16:24:36 -0500
+Subject: [PATCH] Fixed UBSAN out-of-bounds errors
+
+PROD-17632
+---
+ hostcmd.h | 6 +++---
+ main.c    | 2 +-
+ sdio.h    | 2 +-
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/hostcmd.h b/hostcmd.h
+index 3658e68..ea82596 100644
+--- a/drivers/net/wireless/summit/lrdmwl/hostcmd.h
++++ b/drivers/net/wireless/summit/lrdmwl/hostcmd.h
+@@ -1168,17 +1168,17 @@ struct hostcmd_cmd_quiet_mode {
+ 
+ struct hostcmd_cmd_dump_otp_data {
+ 	struct hostcmd_header cmd_hdr;
+-	u8 pload[0];
++	u8 pload[];
+ } __packed;
+ 
+ struct hostcmd_cmd_pre_scan {
+ 	struct hostcmd_header cmd_hdr;
+-	u8 pload[0];
++	u8 pload[];
+ } __packed;
+ 
+ struct hostcmd_cmd_post_scan {
+ 	struct hostcmd_header cmd_hdr;
+-	u8 pload[0];
++	u8 pload[];
+ } __packed;
+ 
+ struct hostcmd_cmd_monitor_mode {
+diff --git a/main.c b/main.c
+index 18abd35..f0f4aa1 100644
+--- a/drivers/net/wireless/summit/lrdmwl/main.c
++++ b/drivers/net/wireless/summit/lrdmwl/main.c
+@@ -414,7 +414,7 @@ typedef struct ww_pwr_entry
+ 	u8     cc[2];
+ 	__le16 rc;
+ 	__le32 len;
+-	u8     data[0];
++	u8     data[];
+ } ww_pwr_entry_t;
+ 
+ #pragma pack(pop)
+diff --git a/sdio.h b/sdio.h
+index c32e927..ac83f2a 100644
+--- a/drivers/net/wireless/summit/lrdmwl/sdio.h
++++ b/drivers/net/wireless/summit/lrdmwl/sdio.h
+@@ -394,7 +394,7 @@ struct mwifiex_sdio_mpa_rx {
+ 
+ struct mwl_host_event_mac_t {
+ 	u16	event_id;
+-	u8	payload[0];
++	u8	payload[];
+ };
+ struct mwl_ibss_lastBcn_payload {
+ 	u16 event;
+-- 
+2.47.1
+
