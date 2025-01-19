@@ -1,0 +1,26 @@
+From 641f07084de5e7f58572bada55b1d1e090d9d180 Mon Sep 17 00:00:00 2001
+From: Boris Krasnovskiy <boris.krasnovskiy@ezurio.com>
+Date: Sat, 18 Jan 2025 16:40:35 -0500
+Subject: [PATCH] Fix stop-shutdown mode entry
+
+PROD-19610
+---
+ sdio.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/sdio.c b/sdio.c
+index 35d62f7..741fd6c 100644
+--- a/drivers/net/wireless/summit/lrdmwl/sdio.c
++++ b/drivers/net/wireless/summit/lrdmwl/sdio.c
+@@ -407,7 +407,7 @@ static int mwl_sdio_init_post(struct mwl_priv *priv)
+ 	struct mwl_sdio_card *card = priv->intf;
+ 	struct sdio_func     *func = card->func;
+ 
+-	if (priv->stop_shutdown && (mwl_gpio_valid(card->reset_pwd) ||
++	if (priv->stop_shutdown && (!mwl_gpio_valid(card->reset_pwd) ||
+ 		mmc_card_is_removable(func->card->host))) {
+ 		priv->stop_shutdown = false;
+ 
+-- 
+2.48.1
+
