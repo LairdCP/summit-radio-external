@@ -16,7 +16,7 @@ ifeq ($(MSD_BINARIES_SOURCE_LOCATION),laird_internal)
   SUMMIT_BRCM_PATCHRAM_PLUS_SITE = git@github.com:rfpros/cp_linux-brcm_patchram.git
   SUMMIT_BRCM_PATCHRAM_PLUS_SITE_METHOD = git
 else
-  SUMMIT_BRCM_PATCHRAM_PLUS_SITE = $(call github,LairdCP,brcm_patchram,$(SUMMIT_BRCM_PATCHRAM_PLUS_VERSION))
+  SUMMIT_BRCM_PATCHRAM_PLUS_SITE = $(call github,Ezurio,brcm_patchram,$(SUMMIT_BRCM_PATCHRAM_PLUS_VERSION))
 endif
 
 ifeq ($(BR2_PACKAGE_BLUEZ4_UTILS),y)
